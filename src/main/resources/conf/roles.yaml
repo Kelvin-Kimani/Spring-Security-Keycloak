@@ -1,0 +1,13 @@
+permission-mapping:
+  roles:
+    - name: some-role-name-1
+      description: 'some-role-description-1'
+      permissions:
+        - CAN_DO_SOMTHING
+
+    - name: some-role-name-2
+      description: 'some-role-description-1'
+      roles:
+        - some-role-name-1
+      permissions:
+        - CAN_DO_SOMETHING_ELSE

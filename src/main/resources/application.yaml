@@ -1,0 +1,26 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+uris:
+  root:
+    iam: http://localhost:8888
+conf:
+  oauth:
+    secret_key: 6eu2dRYVI0W2Djcsnbqk260IjQkgtTc3adN3S5cOwhfX4ARtmFtlM40jAnJyKM9lpkw6wWGdamxutphjOFujgcvepaXxeairfpn6IzMw4gOc4lbKksEuSb4AQRfq4kAabqQOtf6MkLpWFhgh8GY5STaYyX8n4tOIQHxkTjJFnfdh7OxwOEJHBwTQbz57avLWvn1BeTHQrmXQFU59H2KkBV8dUUgNFQVscChoKLQDj46EFcZrc8zOYiJkdv22JgHEOMdOc6KnHsJCVD8m6HANR0IXCghCFDUTLIHoPVuujrTK40ndyRABlXSXzG7zwrMg2I2M
+    client_id: spring-security-keycloak
+    client_secret: nkyAJSqonWhDPqYb42588HtPHsIteqaS
+    grant_type: client_credentials
+    token_url: http://localhost:8888/realms/springsecurity/protocol/openid-connect/token
